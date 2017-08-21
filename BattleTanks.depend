@@ -15,12 +15,14 @@
 1503333716 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\board.h
 	<iostream>
 
-1503252903 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\base_player_class.cpp
+1503336437 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\base_player_class.cpp
 	"Base_Player_Class.h"
 
-1503248026 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\base_player_class.h
+1503336473 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\base_player_class.h
+	"Board.h"
+	"Tank_array.h"
 
-1503331444 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\game_engine.cpp
+1503333989 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\game_engine.cpp
 	"Game_engine.h"
 	<iostream>
 	<stdlib.h>
@@ -31,9 +33,10 @@
 	"Tank.h"
 	"Projectile.h"
 
-1503326825 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\player.h
+1503336349 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\player.h
 	"Board.h"
 	"Tank_array.h"
+	"Base_Player_Class.h"
 	<vector>
 
 1503327454 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\tank_array.h
@@ -45,15 +48,16 @@
 
 1503264583 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\projectile.h
 
-1503334026 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\npc.h
+1503336334 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\npc.h
 	"Board.h"
 	"Tank_array.h"
+	"Base_Player_Class.h"
 
-1503328959 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\npc.cpp
+1503336019 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\npc.cpp
 	"NPC.h"
 	<stdlib.h>
 
-1503328954 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\player.cpp
+1503336058 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\player.cpp
 	"player.h"
 
 1503261077 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\projectile.cpp

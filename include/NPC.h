@@ -1,6 +1,8 @@
 #pragma once
 #include "Board.h"
 #include "Tank_array.h"
+#include "Base_Player_Class.h"
+
 namespace BattlingTanks{
 class NPC//:public Base_Player_Class
 {

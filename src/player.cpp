@@ -19,7 +19,6 @@ void Player::collect_the_fallen(){
 }
 void Player::add_tank(int x,int y)
 {
-    //Base_Player_Class::add_tank(x,y);
     tanks.add_tank(x,y);
     player_board.change_tile(x,y,"[T]");
 }

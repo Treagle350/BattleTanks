@@ -22,7 +22,6 @@ void NPC::generate_enemy_tank()
     add_tank(subX,subY);
 }
 void NPC::add_tank(int x,int y){
-    //Base_Player_Class::add_tank(x,y);
     tanks.add_tank(x,y);
     npc_board.change_tile(x,y,"[.]");
 }

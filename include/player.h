@@ -1,7 +1,9 @@
 #pragma once
 #include "Board.h"
 #include "Tank_array.h"
+#include "Base_Player_Class.h"
 #include <vector>
+
 namespace BattlingTanks{
 class Player//:public Base_Player_Class
 {
