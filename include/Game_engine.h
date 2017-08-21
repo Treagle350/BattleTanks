@@ -11,6 +11,7 @@ class Game_engine
         virtual ~Game_engine();
         void player_guess();
         void npc_guess();
+        bool end_game();
 
     protected:
 

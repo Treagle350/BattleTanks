@@ -5,7 +5,7 @@ namespace BattlingTanks{
 class Tank_array
 {
     public:
-        Tank_array(int amount);
+        Tank_array();
         virtual ~Tank_array();
 
         Tank* get_tank(int i);

@@ -28,9 +28,8 @@ bool Tank::get_shot(int x,int y)
     {
         health = 0;
         shot = true;
-        std::cout<<"Tank got shot ="<<shot<<std::endl;
+        std::cout<<"Tank got shot"<<std::endl;
     }
-    std::cout<<"Shot is "<<shot<<std::endl;
     return shot;
 }
 int Tank::get_health()

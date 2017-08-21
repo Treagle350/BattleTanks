@@ -2,9 +2,8 @@
 #include <iostream>
 
 namespace BattlingTanks{
-Tank_array::Tank_array(int amount)
+Tank_array::Tank_array()
 {
-    this->amount = amount;
     int number_of_tanks = 0;
 }
 Tank_array::~Tank_array()
@@ -18,11 +17,7 @@ void Tank_array::add_tank(int x,int y)
 }
 Tank* Tank_array::get_tank(int i)
 {
-    std::cout<<"returning a tank of i = "<< i <<std::endl;
-    //tanks[i]->//get value from vector
-    std::cout<<"tank value = "<<tanks[i]<<std::endl;
     return tanks[i];
-    //return tanks.at(i);
 }
 int Tank_array::get_number_of_tanks()
 {

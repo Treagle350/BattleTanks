@@ -11,10 +11,9 @@ using namespace BattlingTanks;
 int main()
 {
     Game_engine battleTanks;
-    //do{
+    do{
         battleTanks.player_guess();
         battleTanks.npc_guess();
-    //}while(!ended);
-
+    }while(!battleTanks.end_game());
     return 0;
 }
