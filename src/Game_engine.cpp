@@ -1,0 +1,100 @@
+#include "Game_engine.h"
+#include <iostream>
+#include <stdlib.h>
+namespace BattlingTanks{
+Game_engine::Game_engine()
+{
+    int turns = 0;
+    where_should_the_tanks_be_placed();
+}
+Game_engine::~Game_engine()
+{
+    //dtor
+}
+void Game_engine::win_screen()
+{
+    std::cout << "You won after " << turns << " turns ! " << std::endl;
+}
+void Game_engine::game_over()
+{
+    std::cout << "Game over, the battle lasted " << turns << " turns ! " << std::endl;
+}
+void Game_engine::where_should_the_tanks_be_placed()
+{
+    player.get_board().display_grid();
+    int x,y;
+    for(int i = 0;i<2;i++)
+    {
+        std::cout<<"Please enter the coordinates you would like tank #"<< i <<" to have :"<<std::endl;
+        std::cout<<"x :";
+        std::cin>>x;
+        /*if(x>=0&&x<3){
+            std::cout<<"x should be between 0 and 2";
+            std::cin>>x;
+        }*/
+        std::cout<<std::endl;
+        std::cout<<"y :";
+        std::cin>>y;
+        /*if(y>=0&&y<3){
+            std::cout<<"y should be between 0 and 2";
+            std::cin>>y;
+        }*/
+        std::cout<<std::endl;
+        player.add_tank(x,y);
+    }
+}
+void Game_engine::npc_receive_damage(Projectile projectile,int i)
+{
+    bool shot = false;
+    int x = projectile.get_x();
+    int y = projectile.get_y();
+    shot = computer.get_tank_array().tanks.at(i)->get_shot(x,y);
+    if(shot){
+        computer.collect_the_fallen();
+    }std::cout<<"No problems here"<<std::endl;
+}
+void Game_engine::player_receive_damage(Projectile projectile,int i)
+{
+    bool shot = false;
+    int x = projectile.get_x();
+    int y = projectile.get_y();
+    shot = player.get_tank_array().tanks.at(i)->get_shot(x,y);
+    if(shot){
+        player.collect_the_fallen();
+    }
+}
+void Game_engine::player_guess()
+{
+    turns = turns + 1;
+    int x,y;
+    for (int i = 0;i<player.get_tank_array().tanks.size();i++){
+        std::cout<<"Please enter the coordinates you would like tank #"<< i <<" to fire at :"<<std::endl;
+        std::cout<<"x :";
+        std::cin>>x;
+        /*if(x>=0&&x<3){
+            std::cout<<"x should be between 0 and 2";
+            std::cin>>x;
+        }*/
+        std::cout<<std::endl;
+        std::cout<<"y :";
+        std::cin>>y;
+        /*if(y>=0&&y<3){
+            std::cout<<"y should be between 0 and 2";
+            std::cin>>y;
+        }*/
+        std::cout<<"Displaying computer's board"<<std::endl;
+        computer.get_board().change_tile(x,y,"[O]");
+        npc_receive_damage(player.get_tank_array().tanks.at(i)->shoot(x,y),i);
+    }
+}
+void Game_engine::npc_guess()
+{
+    for (int i = 0;i<computer.get_tank_array().tanks.size();i++){
+        int x = (rand()*3) % 3;
+        int y = (rand()*3) % 3;
+        std::cout<<"Displaying player's board"<<std::endl;
+        player.get_board().change_tile(x,y,"[O]");
+        player_receive_damage(computer.get_tank_array().tanks.at(i)->shoot(x,y),i);
+    }
+}
+}

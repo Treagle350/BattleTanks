@@ -1,0 +1,26 @@
+#pragma once
+#include "Board.h"
+#include "Tank_array.h"
+namespace BattlingTanks{
+class NPC//:public Base_Player_Class
+{
+    public:
+        NPC();
+        virtual ~NPC();
+
+        void generate_enemy_tank();
+        Tank_array get_tank_array();
+        Board get_board();
+        void collect_the_fallen();
+
+    protected:
+
+    private:
+        int amount_of_tanks;
+
+        void add_tank(int x, int y);
+
+        Board npc_board;
+        Tank_array tanks;
+};
+}

@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1503288112 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\main.cpp
+	<string>
+	<iostream>
+	<process.h>
+	<cstdlib>
+	<time.h>
+	<Game_engine.h>
+	"Board.h"
+
+1503274213 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\board.cpp
+	"Board.h"
+	<iostream>
+
+1503278626 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\board.h
+	<iostream>
+
+1503252903 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\base_player_class.cpp
+	"Base_Player_Class.h"
+
+1503248026 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\base_player_class.h
+
+1503287327 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\game_engine.cpp
+	"Game_engine.h"
+	<iostream>
+	<stdlib.h>
+
+1503288632 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\game_engine.h
+	"player.h"
+	"NPC.h"
+	"Tank.h"
+	"Projectile.h"
+
+1503264911 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\player.h
+	"Board.h"
+	"Tank_array.h"
+	<vector>
+
+1503271764 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\tank_array.h
+	"Tank.h"
+	<vector>
+
+1503271558 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\tank.h
+	"Projectile.h"
+
+1503264583 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\projectile.h
+
+1503264141 c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\include\npc.h
+	"Board.h"
+	"Tank_array.h"
+
+1503287745 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\npc.cpp
+	"NPC.h"
+	<stdlib.h>
+
+1503287757 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\player.cpp
+	"player.h"
+
+1503261077 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\projectile.cpp
+	"Projectile.h"
+
+1503271575 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\tank.cpp
+	"Tank.h"
+	<iostream>
+
+1503272132 source:c:\users\jens\workspace\vives\oop\oop c++\projects\battletanks\src\tank_array.cpp
+	"Tank_array.h"
+	<iostream>
+
