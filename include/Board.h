@@ -13,8 +13,8 @@ class Board
     protected:
 
     private:
-        int ROW;
-        int COL;
+        const int ROW = 3;
+        const int COL = 3;
 
         std::string board_array[3][3];
 

@@ -25,6 +25,7 @@ class Game_engine
         void where_should_the_tanks_be_placed();
 
         int turns;
+        const int tank_amount = 2;
 
         Player player;
         NPC computer;

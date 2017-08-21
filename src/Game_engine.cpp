@@ -37,7 +37,7 @@ void Game_engine::where_should_the_tanks_be_placed()
 {
     player.get_board().display_grid();
     int x,y;
-    for(int i = 0;i<2;i++)
+    for(int i = 0;i<tank_amount;i++)
     {
         std::cout<<"Please enter the coordinates you would like tank #"<< i <<" to have :"<<std::endl;
         std::cout<<"x :";

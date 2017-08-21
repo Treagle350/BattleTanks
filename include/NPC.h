@@ -19,6 +19,8 @@ class NPC//:public Base_Player_Class
 
         void add_tank(int x, int y);
 
+        const int tank_amount = 2;
+
         Board npc_board;
         Tank_array tanks;
 };

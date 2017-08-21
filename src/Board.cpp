@@ -12,8 +12,8 @@ Board::~Board()
 }
 void Board::generate_board_grid()
 {
-    for(int i = 0; i < 3; i++) {
-        for (int j = 0; j <3; j++) {
+    for(int i = 0; i < ROW; i++) {
+        for (int j = 0; j <COL; j++) {
             board_array[i][j] = "[.]";
         }
     }
@@ -25,8 +25,8 @@ void Board::change_tile(int x, int y, std::string sprite)
 }
 void Board::display_grid()
 {
-    for(int i = 0; i < 3; i++) {
-        for (int j = 0; j <3; j++) {
+    for(int i = 0; i < ROW; i++) {
+        for (int j = 0; j <COL; j++) {
             std::cout<<board_array[i][j];
         }
         std::cout<<std::endl;

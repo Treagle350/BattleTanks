@@ -12,7 +12,7 @@ Player::~Player()
 void Player::collect_the_fallen(){
     for(unsigned int i=0; i<tanks.tanks.size(); i++ ){
         if(tanks.tanks.at(i)->get_health() == 0){
-            tanks.tanks.erase(tanks.tanks.begin()+(i-1));//Out of bound exceptions
+            tanks.tanks.erase(tanks.tanks.begin()+(i-1));
         }
 
     }
