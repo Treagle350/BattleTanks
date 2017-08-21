@@ -6,6 +6,7 @@ Tank::Tank(int x,int y)
 {
     set_position(x,y);
     int health = 100;
+    bool shot = false;
 }
 Tank::~Tank()
 {
@@ -23,7 +24,7 @@ Projectile Tank::shoot(int x,int y)
 }
 bool Tank::get_shot(int x,int y)
 {
-    bool shot = false;
+    shot = false;
     if(x==this->x&&y==this->y)
     {
         health = 0;

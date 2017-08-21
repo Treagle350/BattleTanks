@@ -14,6 +14,7 @@ void Player::collect_the_fallen(){
         if(tanks.tanks.at(i)->get_health() == 0){
             tanks.tanks.erase(tanks.tanks.begin()+(i-1));//Out of bound exceptions
         }
+
     }
 }
 void Player::add_tank(int x,int y)

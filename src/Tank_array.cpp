@@ -23,4 +23,8 @@ int Tank_array::get_number_of_tanks()
 {
     return number_of_tanks;
 }
+void Tank_array::set_number_of_tanks(int new_number_of_tanks)
+{
+    number_of_tanks = new_number_of_tanks;
+}
 }

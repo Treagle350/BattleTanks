@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Base_Player_Class.h" />
 		<Unit filename="include/Board.h" />
 		<Unit filename="include/Game_engine.h" />
 		<Unit filename="include/NPC.h" />
@@ -42,6 +43,7 @@
 		<Unit filename="include/Tank_array.h" />
 		<Unit filename="include/player.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Base_Player_Class.cpp" />
 		<Unit filename="src/Board.cpp" />
 		<Unit filename="src/Game_engine.cpp" />
 		<Unit filename="src/NPC.cpp" />

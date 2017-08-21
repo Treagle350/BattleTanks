@@ -57,26 +57,30 @@ void Game_engine::where_should_the_tanks_be_placed()
         player.add_tank(x,y);
     }
 }
-void Game_engine::npc_receive_damage(Projectile projectile,int i)
+void Game_engine::npc_receive_damage(Projectile projectile)
 {
     bool shot = false;
     int x = projectile.get_x();
     int y = projectile.get_y();
-    shot = computer.get_tank_array().tanks.at(i)->get_shot(x,y);
-    if(shot){
-        computer.collect_the_fallen();
-        computer.get_board().change_tile(x,y,"[X]");
+    for(int i = 0;i<computer.get_tank_array().tanks.size();i++){
+        shot = computer.get_tank_array().tanks.at(i)->get_shot(x,y);
+        if(shot){
+            computer.collect_the_fallen();
+            computer.get_board().change_tile(x,y,"[X]");
+        }
     }
 }
-void Game_engine::player_receive_damage(Projectile projectile,int i)
+void Game_engine::player_receive_damage(Projectile projectile)
 {
     bool shot = false;
     int x = projectile.get_x();
     int y = projectile.get_y();
-    shot = player.get_tank_array().tanks.at(i)->get_shot(x,y);
-    if(shot){
-        player.collect_the_fallen();
-        player.get_board().change_tile(x,y,"[X]");
+    for(int i = 0;i<player.get_tank_array().tanks.size();i++){
+        shot = player.get_tank_array().tanks.at(i)->get_shot(x,y);
+        if(shot){
+            player.collect_the_fallen();
+            player.get_board().change_tile(x,y,"[X]");
+        }
     }
 }
 void Game_engine::player_guess()
@@ -100,7 +104,7 @@ void Game_engine::player_guess()
         }
         std::cout<<"Displaying computer's board"<<std::endl;
         computer.get_board().change_tile(x,y,"[O]");
-        npc_receive_damage(player.get_tank_array().tanks.at(i)->shoot(x,y),i);
+        npc_receive_damage(player.get_tank_array().tanks.at(i)->shoot(x,y));
     }
 }
 void Game_engine::npc_guess()
@@ -110,7 +114,7 @@ void Game_engine::npc_guess()
         int y = (rand()*10) % 3;
         std::cout<<"Displaying player's board"<<std::endl;
         player.get_board().change_tile(x,y,"[O]");
-        player_receive_damage(computer.get_tank_array().tanks.at(i)->shoot(x,y),i);
+        player_receive_damage(computer.get_tank_array().tanks.at(i)->shoot(x,y));
     }
 }
 }

@@ -20,8 +20,8 @@ class Game_engine
         void win_screen();
         void game_over();
 
-        void npc_receive_damage(Projectile projectile , int i);
-        void player_receive_damage(Projectile projectile, int i);
+        void npc_receive_damage(Projectile projectile);
+        void player_receive_damage(Projectile projectile);
         void where_should_the_tanks_be_placed();
 
         int turns;

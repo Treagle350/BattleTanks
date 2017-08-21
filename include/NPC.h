@@ -16,7 +16,6 @@ class NPC//:public Base_Player_Class
     protected:
 
     private:
-        int amount_of_tanks;
 
         void add_tank(int x, int y);
 

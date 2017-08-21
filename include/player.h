@@ -17,7 +17,6 @@ class Player//:public Base_Player_Class
     protected:
 
     private:
-        int amount_of_tanks;
 
         Board player_board;
         Tank_array tanks;
