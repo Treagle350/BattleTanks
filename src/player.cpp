@@ -15,7 +15,7 @@ void Player::collect_the_fallen(){
     for(unsigned int i=0; i<tanks.tanks.size(); i++ ){
         if(tanks.tanks.at(i)->get_health() == 0){
             player_board.change_tile(tanks.tanks[i]->get_x(),tanks.tanks[i]->get_y(),"[X]");
-            tanks.tanks.erase(tanks.tanks.begin()+i);
+            //tanks.tanks.erase(tanks.tanks.begin()+i);
         }
     }
 }
