@@ -4,12 +4,24 @@
 namespace BattlingTanks{
 Game_engine::Game_engine()
 {
-    int turns = 0;
+    turns = 0;
+    info_screen();
     where_should_the_tanks_be_placed();
 }
 Game_engine::~Game_engine()
 {
     //dtor
+}
+void Game_engine::info_screen()
+{
+    std::cout << std::endl;
+    std::cout << "Coordinates on the board range from 0 to 2" << std::endl;
+    std::cout << "Coordinates are entered as following :" << std::endl;
+    std::cout << "x : 2" << std::endl;
+    std::cout << "y : 0" << std::endl;
+    std::cout << "Whereas x represents the vertical columns of the board" << std::endl;
+    std::cout << "And y represents the horizontal rows of the board" << std::endl;
+    std::cout << std::endl;
 }
 void Game_engine::win_screen()
 {
@@ -35,7 +47,7 @@ bool Game_engine::end_game()
 }
 void Game_engine::where_should_the_tanks_be_placed()
 {
-    player.get_board().display_grid();
+    //player.get_board().display_grid();
     int x,y;
     for(int i = 0;i<tank_amount;i++)
     {

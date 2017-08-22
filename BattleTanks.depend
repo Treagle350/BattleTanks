@@ -71,3 +71,75 @@
 	"Tank_array.h"
 	<iostream>
 
+1503410135 source:c:\users\jens\downloads\battletanks-master\main.cpp
+	<string>
+	<iostream>
+	<process.h>
+	<cstdlib>
+	<time.h>
+	<Game_engine.h>
+	"Board.h"
+
+1503410217 c:\users\jens\downloads\battletanks-master\include\game_engine.h
+	"player.h"
+	"NPC.h"
+	"Tank.h"
+	"Projectile.h"
+
+1503336982 c:\users\jens\downloads\battletanks-master\include\player.h
+	"Board.h"
+	"Tank_array.h"
+	"Base_Player_Class.h"
+	<vector>
+
+1503336982 c:\users\jens\downloads\battletanks-master\include\board.h
+	<iostream>
+
+1503336982 c:\users\jens\downloads\battletanks-master\include\tank_array.h
+	"Tank.h"
+	<vector>
+
+1503336982 c:\users\jens\downloads\battletanks-master\include\tank.h
+	"Projectile.h"
+
+1503336982 c:\users\jens\downloads\battletanks-master\include\projectile.h
+
+1503336982 c:\users\jens\downloads\battletanks-master\include\base_player_class.h
+	"Board.h"
+	"Tank_array.h"
+
+1503336982 c:\users\jens\downloads\battletanks-master\include\npc.h
+	"Board.h"
+	"Tank_array.h"
+	"Base_Player_Class.h"
+
+1503336982 source:c:\users\jens\downloads\battletanks-master\src\base_player_class.cpp
+	"Base_Player_Class.h"
+
+1503336982 source:c:\users\jens\downloads\battletanks-master\src\board.cpp
+	"Board.h"
+	<iostream>
+
+1503410349 source:c:\users\jens\downloads\battletanks-master\src\game_engine.cpp
+	"Game_engine.h"
+	<iostream>
+	<stdlib.h>
+
+1503410302 source:c:\users\jens\downloads\battletanks-master\src\npc.cpp
+	"NPC.h"
+	<stdlib.h>
+
+1503336982 source:c:\users\jens\downloads\battletanks-master\src\player.cpp
+	"player.h"
+
+1503336982 source:c:\users\jens\downloads\battletanks-master\src\projectile.cpp
+	"Projectile.h"
+
+1503336982 source:c:\users\jens\downloads\battletanks-master\src\tank.cpp
+	"Tank.h"
+	<iostream>
+
+1503336982 source:c:\users\jens\downloads\battletanks-master\src\tank_array.cpp
+	"Tank_array.h"
+	<iostream>
+

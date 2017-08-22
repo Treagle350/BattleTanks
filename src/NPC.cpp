@@ -7,7 +7,7 @@ NPC::NPC()
     std::cout<<"Constructing npc"<<std::endl;
     for(int i = 0;i<tank_amount;i++){
         generate_enemy_tank();
-        std::cout<<"Generating enemy tank #"<<i<<std::endl;
+        std::cout<<"Generated enemy tank #"<<i<<std::endl;
     }
 }
 NPC::~NPC()
